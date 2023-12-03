@@ -167,5 +167,11 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-V1-ndk.vendor:64 \
     com.google.hardware.pixel.display-V6-ndk.vendor
 
+# Gapps
+ifneq ($(wildcard vendor/gapps),)
+  WITH_GMS := true
+  $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+endif
+
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
