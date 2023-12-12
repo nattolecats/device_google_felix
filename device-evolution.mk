@@ -177,5 +177,9 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-V1-ndk.vendor:64 \
     com.google.hardware.pixel.display-V9-ndk.vendor
 
+# Screen Attention
+PRODUCT_PACKAGES += \
+    AdaptiveSleepOverlay
+
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
