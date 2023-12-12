@@ -15,3 +15,5 @@ TO=(
 for i in "${!FROM[@]}"; do
     git clone "${FROM[$i]}" "${TO[$i]}" -b $BRANCH
 done
+
+git clone https://github.com/LineageOS/android_device_google_gs-common -b lineage-21 device/google/gs-common
